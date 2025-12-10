@@ -47,8 +47,8 @@
             animation: {
               'fade-in': 'fadeIn 0.6s ease-out forwards',
               'slide-up': 'slideUp 0.6s ease-out forwards',
-              'text-shimmer': 'textShimmer 6s ease infinite', // Slowed down for elegance
-              'border-glow': 'borderGlow 5s ease infinite',   // Slowed down for elegance
+              'text-shimmer': 'textShimmer 6s ease infinite',
+              'border-glow': 'borderGlow 5s ease infinite',
             },
             keyframes: {
               fadeIn: {
@@ -101,13 +101,15 @@
         background: #3f3f46; 
       }
     </style>
-  <script type="importmap">
+<script type="importmap">
 {
   "imports": {
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
     "react/": "https://aistudiocdn.com/react@^19.2.1/",
     "react": "https://aistudiocdn.com/react@^19.2.1",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.2",
+    "vite": "https://aistudiocdn.com/vite@^7.2.7",
     "@supabase/supabase-js": "https://aistudiocdn.com/@supabase/supabase-js@^2.87.1"
   }
 }
@@ -115,5 +117,6 @@
 </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
